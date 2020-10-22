@@ -157,7 +157,7 @@ weekly_sales_april2020 %>% left_join( weekly_sales_april2019,
           diff_scratcher = scratcher_sales_20 - scratcher_sales_19,
           diff_pull_tabs = pull_tabs_20 - pull_tabs_19,
           diff_total = total_20 - total_19 ) %>% 
-  select( starts_with( "diff" ) )
+  select( week, starts_with( "diff" ) )
 
 ```
 
